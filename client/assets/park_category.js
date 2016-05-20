@@ -531,4 +531,4 @@ var parkLists = [{parkName:"Abraham Lincoln Birthplace National Historical Park"
 ,{parkName:"Yosemite National Park", parkCode:"YOSE"}
 ,{parkName:"Yucca House National Monument", parkCode:"YUHO"}
 ,{parkName:"Yukon-Charley Rivers National Preserve", parkCode:"YUCH"}
-,{parkName:"Zion National Park", parkCode:"ZION"}]
+,{parkName:"Zion National Park", parkCode:"ZION"}];

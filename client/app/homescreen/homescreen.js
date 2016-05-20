@@ -5,7 +5,7 @@ angular.module('mainPage', [])
   $scope.searchStatus = false;
   $scope.submitSearch = function(){
   	$scope.searchStatus = true;
-  	
+
   }
   
 });
