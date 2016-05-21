@@ -28,5 +28,4 @@ angular.module('mainPage', [])
 		}
 	}
 	return {filter:filterText};
-
 });
