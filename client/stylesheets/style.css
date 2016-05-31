@@ -123,7 +123,7 @@ div, span{
     color: white;
 }
 #descriptionContainer{
-    height: 50%;
+    max-height: 50%;
     width:100%;
     border: 2px solid #465c8b;
     border-radius: 6px;
@@ -131,7 +131,7 @@ div, span{
     background-color: #dfdce3;
 }
 #descriptionContent{
-    height: 30VH;
+    max-height: 30VH;
     width: 90%;
     overflow: scroll;
     margin: 5px auto;
