@@ -85,7 +85,6 @@
                       <div id="details">
                         <span id="currTemp">Current Temp: {{todaysWeather.currTemp}}</span>
                         <span id="todayDescription">{{todaysWeather.description}}</span>
-                        <img id="todaysWeatherIcon" src={{todaysWeather.iconLink}}/>
                         <span id="todayMax">Max: {{todaysWeather.highTemp}}</span>
                         <span id="todayMin">Min: {{todaysWeather.lowTemp}}</span>
                       </div>
@@ -93,10 +92,9 @@
                   <div id="sevenDayforcast" ng-repeat="day in sevenDayForecast">
                     <div>
                       <span class="forecastDate">{{day.date}}</span>
-                      <img class="forecastIcon" src={{day.iconLink}}/>
+                      <span class="forcastedDescription">{{day.description}}</span>
                       <span class="forcastedHigh">High: {{day.highTemp}}</span>
                       <span class="forcastedLow">Low: {{day.lowTemp}}</span>
-                      <span class="forcastedDescription"></span>
                     </div>
                   </div>
                 </div>
@@ -110,7 +108,7 @@
                     <div ng-bind-html="textArea"></div>
                 </div>
                 <div id="campgrounds" ng-controller="campgroundsController" ng-show="tab5">
-                  <div id="campgroundsAmenitiesTitle">Top Campground</div>
+                  <div id="campgroundsTitle">Top Campground</div>
                   <div ng-show="hideCampgrounds">
                     No campgrounds found!
                   </div>
@@ -122,7 +120,7 @@
                     </div> 
                   </div>
                   <div> <strong>Description:</strong>- {{description}} </div>
-                  <div id="campgroundsAmentTitle"> Campground Amenities: </div>
+                  <div id="campgroundsAmenitiesTitle"> Campground Amenities: </div>
                   <div ng-repeat="info in campgroundinfo" ng-show="!hideCampgrounds">
                     <span> {{info.name}} </span>
                   </div>
