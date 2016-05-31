@@ -28,14 +28,12 @@ angular.module('parksAndEx.weather', [])
   var apiKey = '4efbcc23711c1a198e5242ff3bd69d7a';
   var urlTodayStart = 'http://api.openweathermap.org/data/2.5/weather?';
   var urlSevenDayStart = 'http://api.openweathermap.org/data/2.5/forecast/daily?';
-  
   var latitude;
   var longitude;
 
   function generateWeather(lat, lon) {
     latitude = lat;
     longitude = lon;
-
     httpGetAsync(setUrl(urlTodayStart), handleTodaysForecast);
     httpGetAsync(setUrl(urlSevenDayStart), handleSevenDayForecast);
   }
@@ -69,15 +67,25 @@ angular.module('parksAndEx.weather', [])
   }
 
   function httpGetAsync(url, callback) {
-    var xmlHttp = new XMLHttpRequest();
-    
-    xmlHttp.onreadystatechange = function() { 
-      if (xmlHttp.readyState === 4 && xmlHttp.status === 200) {
-        callback(JSON.parse(xmlHttp.responseText));
+
+    //var url = "http://api.amp.active.com/camping/campgrounds/?pname=" + input +"&api_key=dr4texk5yrrhvfykvcbg5zza";
+    var yql = 'http://query.yahooapis.com/v1/public/yql?q=' + encodeURIComponent('select * from xml where url="' + url + '"') + '&format=json&callback=?';
+   
+    $.ajax({
+      type: 'GET',
+      url: yql,
+      async: false,
+      crossDomain: true,
+      dataType: 'json',
+      success: function(data) {
+        console.log(data);
+        
+      },
+      failure: function(err) {
+        console.log("ERR", err);
       }
-    }
-    xmlHttp.open("GET", url, true);
-    xmlHttp.send();
+    });
+
   }
 
   function setUrl(urlStart) {
