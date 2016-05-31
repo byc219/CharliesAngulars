@@ -198,8 +198,11 @@ div, span{
     height:100%;
     width:100%;
 }
-
-/*navbar style here*/ #dfdce3
+#logoImage{
+        height: 90px;
+        float: right;
+}
+/*navbar style here #dfdce3*/ 
 
 #navbar{
     background-color: #dfdce3;
