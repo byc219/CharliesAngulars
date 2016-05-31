@@ -13,8 +13,11 @@ html {
     padding: 0;
 }
 #tabContentHolder{
-    overflow: auto;
-    height: 80%;
+   overflow: auto;
+    height: 76%;
+    background-color: white;
+    border-radius: 6px;
+    margin: 2%;
 }
 #mapHolder {
     height: 300px;
