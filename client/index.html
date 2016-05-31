@@ -68,7 +68,7 @@
             <span id="totalDisplayContainer">
           <div id="descriptionContainer" ng-controller="descriptionController">
             <p id="parkName">{{parkName}}</p>
-            <div id="descriptionContent">{{description}}</div>
+            <div  id="descriptionContent">{{description}}</div>
           </div>
           <div id="tabContainer" ng-controller="toggleNavbarController">
             <div id="navbar">
@@ -76,7 +76,7 @@
                 <span class="navbarLi" ng-click="reset(); tab1 = !tab1">Current Weathers</span>
                 <span class="navbarLi" ng-click="reset(); tab3 = !tab3">Reviews</span>
                 <span class="navbarLi" ng-click="reset(); tab4 = !tab4">Wildlife</span>
-				<span class="navbarLi" ng-click="reset(); tab5 = !tab5">Campgrounds</span>
+				        <span class="navbarLi" ng-click="reset(); tab5 = !tab5">Campgrounds</span>
               </div>
             </div>
             <div id="weather" ng-controller="weatherController" ng-show="tab1">
