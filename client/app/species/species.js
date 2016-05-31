@@ -116,6 +116,7 @@ angular.module('parksAndEx.species', ['ngSanitize'])
                             others += "<div class='animal'> <a target='_blank' href='https://en.wikipedia.org/wiki/" + animalCommonName.split(' ').join('_').split("'").join("%27") + "''>" + animalCommonName + "</a></div>";
 
                         }
+
                     }
                     //console.log("--------",species[i],"--------", others);
                     let speciesName = species[i];
