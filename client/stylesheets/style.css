@@ -12,15 +12,17 @@ html {
     margin: 0;
     padding: 0;
 }
+#tabContentHolder{
+    overflow: auto;
+    height: 80%;
+}
 #mapHolder {
     height: 300px;
     background-color: #dfdce3;
     border: solid 2px #465c8b;
     border-radius: 6px;
     padding: 10px;
-}
-#map{
-    
+    margin-top: 10px;
 }
 #popup {
     margin: 100px auto;
@@ -103,10 +105,11 @@ div, span{
     overflow: scroll;
 }
 #filterContainer{
-
+    max-height:49%;
     background-color: #dfdce3;
     border: solid 2px #465c8b;
     border-radius: 6px;
+    overflow: auto;
 }
 .filteredItem{
     padding: 5px;
