@@ -301,6 +301,6 @@ div, span{
     border-radius: 6px;
 }
 
-#campgroundsTitle {
+#campgroundsTitle, #campgroundsAmenitiesTitle {
 	font-weight: bold;
 }
