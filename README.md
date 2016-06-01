@@ -8,6 +8,10 @@
   - __Scrum Master__: Diana Johnson
   - __Development Team Members__: Bo Yao, Michael Chen
 
+#Dev Summary
+This project took all 4 team members 1 week to build. Each team member was working remotly, spending about 2-3 hours a day on average.
+Not a single prebuilt design template was used/purchased from online. Team coordination was key in delivering a fully functioning
+custom designed by the deadline. 
 ## Table of Contents
 
 1. [Usage](#Usage)
